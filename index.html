@@ -1,1 +1,24 @@
-Cannabis Social Club Paderborn
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Willkommen beim Cannabis Social Store</title>
+  </head>
+  <body>
+    <h1>Willkommen beim Cannabis Social Store</h1>
+    <p>Bitte bestätigen Sie Ihr Alter:</p>
+    <form>
+      <input type="number" id="age" name="age" min="1" max="100">
+      <button type="button" onclick="verifyAge()">Bestätigen</button>
+    </form>
+    <script>
+      function verifyAge() {
+        var age = document.getElementById("age").value;
+        if (age >= 18) {
+          window.location.href = "home.html";
+        } else {
+          alert("Sie sind nicht alt genug, um diese Website zu besuchen!");
+        }
+      }
+    </script>
+  </body>
+</html>
