@@ -4058,6 +4058,15 @@ input[type="button"].btn-block {
   padding: 0.5rem 1rem;
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand h1 {
+  margin-left: 10px;
+}
+
 .navbar .container,
 .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
   display: flex;
