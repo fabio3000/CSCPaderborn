@@ -3613,6 +3613,13 @@ input[type="button"].btn-block {
   vertical-align: top;
 }
 
+.meldung {
+  background-color: rgb(0, 36, 2);
+  padding: 10px;
+  text-align: center;
+}
+
+
 .custom-control-label::before {
   position: absolute;
   top: 0.25rem;
@@ -3625,6 +3632,8 @@ input[type="button"].btn-block {
   background-color: #fff;
   border: #adb5bd solid 1px;
 }
+
+
 
 .custom-control-label::after {
   position: absolute;
@@ -3700,7 +3709,9 @@ input[type="button"].btn-block {
     transition: none;
   }
 }
-
+@media (min-width: 370px) {
+  .myClass{}
+}
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
   background-color: #fff;
   transform: translateX(0.75rem);
