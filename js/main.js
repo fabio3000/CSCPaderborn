@@ -18,6 +18,19 @@
         $(window).resize(toggleNavbarMethod);
     });
     
+
+    / Bestimme das Datum, an dem die Webseite online gegangen ist (in diesem Beispiel ist es der 1. Januar 2022)
+var onlineDate = new Date("2022-01-01");
+
+// Berechne die Differenz in Millisekunden zwischen dem Datum, an dem die Webseite online gegangen ist, und dem aktuellen Datum
+var currentDate = new Date();
+var diffMilliseconds = currentDate.getTime() - onlineDate.getTime();
+
+// Berechne die Anzahl der Tage durch Teilen der Differenz in Millisekunden durch die Anzahl der Millisekunden pro Tag
+var diffDays = Math.floor(diffMilliseconds / (1000 * 60 * 60 * 24));
+
+// Aktualisiere das HTML-Element mit der Anzahl der Tage
+document.getElementById("onlineDays").innerHTML = diffDays;
     
     // Back to top button
     $(window).scroll(function () {
