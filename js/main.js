@@ -19,8 +19,8 @@
     });
     
 
-    / Bestimme das Datum, an dem die Webseite online gegangen ist (in diesem Beispiel ist es der 1. Januar 2022)
-var onlineDate = new Date("2022-01-01");
+    // Bestimme das Datum, an dem die Webseite online gegangen ist (in diesem Beispiel ist es der 1. Januar 2022)
+var onlineDate = new Date("2023-05-01");
 
 // Berechne die Differenz in Millisekunden zwischen dem Datum, an dem die Webseite online gegangen ist, und dem aktuellen Datum
 var currentDate = new Date();
