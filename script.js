@@ -5,39 +5,55 @@ $('.subscribtion').click(function(){
     $(this).removeClass('active');
     $('.form').removeClass('active');
     
-    if($(this).hasClass('free')) {
-      $('.family').removeClass('hidden');
-      $('.premium').removeClass('hidden');
-      $('.free-form').removeClass('hidden');
-      $('.free-button').removeClass('active');
+    if($(this).hasClass('fivegram')) {
+      $('.tengram').removeClass('hidden');
+      $('.twentyfivegram').removeClass('hidden');
+      $('.fiftygram').removeClass('hidden');
+      $('.fivegram-form').removeClass('hidden');
+      $('.fivegram-button').removeClass('active');
     }
-    if($(this).hasClass('family')) {
-      $('.free').removeClass('hidden');
-      $('.premium').removeClass('hidden');
+    if($(this).hasClass('tengram')) {
+      $('.fivegram').removeClass('hidden');
+      $('.twentyfivegram').removeClass('hidden');
+      $('.fiftygram').removeClass('hidden');
     }
-    if($(this).hasClass('premium')) {
-      $('.free').removeClass('hidden');
-      $('.family').removeClass('hidden');
+    if($(this).hasClass('twentyfivegram')) {
+      $('.fivegram').removeClass('hidden');
+      $('.tengram').removeClass('hidden');
+      $('.fiftygram').removeClass('hidden');
     }
+    if($(this).hasClass('fiftygram')) {
+        $('.fivegram').removeClass('hidden');
+        $('.tengram').removeClass('hidden');
+        $('.twentyfivegram').removeClass('hidden');
+      }
     
   }
   else {
     $(this).addClass('active');
     
-    if($(this).hasClass('free')) {
-      $('.family').addClass('hidden');
-      $('.premium').addClass('hidden');
-      $('.free-form').addClass('hidden');
-      $('.free-button').addClass('active');
+    if($(this).hasClass('fivegram')) {
+      $('.tengram').addClass('hidden');
+      $('.twentyfivegram').addClass('hidden');
+      $('.fiftygram').addClass('hidden');
+      $('.fivegram-form').addClass('hidden');
+      $('.fivegram-button').addClass('active');
     }
-    if($(this).hasClass('family')) {
-      $('.free').addClass('hidden');
-      $('.premium').addClass('hidden');
+    if($(this).hasClass('tengram')) {
+      $('.fivegram').addClass('hidden');
+      $('.twentyfivegram').addClass('hidden');
+      $('.fiftygram').addClass('hidden');
     }
-    if($(this).hasClass('premium')) {
-      $('.free').addClass('hidden');
-      $('.family').addClass('hidden');
+    if($(this).hasClass('twentyfivegram')) {
+      $('.fivegram').addClass('hidden');
+      $('.tengram').addClass('hidden');
+      $('.fiftygram').addClass('hidden');
     }
+    if($(this).hasClass('fiftygram')) {
+        $('.fivegram').addClass('hidden');
+        $('.tengram').addClass('hidden');
+        $('.twentyfivegram').addClass('hidden');
+      }
     
     $('.form').addClass('active');
   }
@@ -57,33 +73,39 @@ $('.payment-btn').click(function(){
 })
 
 
-const freeDiv = document.querySelector('.subscribtion.free');
-const familyDiv = document.querySelector('.subscribtion.family');
-const premiumDiv = document.querySelector('.subscribtion.premium');
+const fivegramDiv = document.querySelector('.subscribtion.fivegram');
+const tengramDiv = document.querySelector('.subscribtion.tengram');
+const fiftygramDiv = document.querySelector('.subscribtion.fiftygram');
+const twentyfivegramDiv = document.querySelector('.subscribtion.twentyfivegram');
 const auswahlElement = document.querySelector('#auswahl');
 
 function setAuswahl(value) {
   auswahlElement.value = value;
 }
 
-freeDiv.addEventListener('click', () => {
-  setAuswahl(1);
+fivegramDiv.addEventListener('click', () => {
+  setAuswahl(5);
   console.log('Auswahl auf "Option 1" gesetzt');
 });
 
-familyDiv.addEventListener('click', () => {
-  setAuswahl(2);
+tengramDiv.addEventListener('click', () => {
+  setAuswahl(10);
   console.log('Auswahl auf "Option 2" gesetzt');
 });
 
-premiumDiv.addEventListener('click', () => {
-  setAuswahl(3);
+twentyfivegramDiv.addEventListener('click', () => {
+  setAuswahl(25);
   console.log('Auswahl auf "Option 3" gesetzt');
 });
+fiftygramDiv.addEventListener('click', () => {
+    setAuswahl(50);
+    console.log('Auswahl auf "Option 4" gesetzt');
+  });
+
 
 
 const form = document.querySelector('#form');
-const subscriptionElements = document.querySelectorAll('.subscribtion.free, .subscribtion.family, .subscribtion.premium');
+const subscriptionElements = document.querySelectorAll('.subscribtion.fivegram, .subscribtion.tengram, .subscribtion.twentyfivegram, .subscribtion.fiftygram');
 
 subscriptionElements.forEach(element => {
   element.addEventListener('click', () => {
@@ -94,5 +116,7 @@ subscriptionElements.forEach(element => {
     }
   });
 });
+
+
 
 

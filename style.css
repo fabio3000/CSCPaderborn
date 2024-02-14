@@ -167,16 +167,16 @@
   box-shadow: 0px 0px 10px 0px #ff6b81;
 }
 
-.free-button {
+.fivegram-button {
   width: 100%;
   margin-right: 0;
   margin-top: 8px;
   display: none;
 }
-.free-button:hover {
+.fivegram-button:hover {
   box-shadow: 0px 0px 10px 0px #ff6b81;
 }
-.free-button.active {
+.fivegram-button.active {
   display: block;
 }
 
@@ -193,7 +193,7 @@
   margin-left: 12px;
 }
 
-.free-form.hidden {
+.fivegram-form.hidden {
   height: 0;
   opacity: 0;
   display: none;
@@ -206,3 +206,8 @@
 #form {
     display: none;
   }
+
+  .subscribtion.fivegram {
+    width: 400px; /* Ersetze 400px mit deinem gewünschten Wert */
+  }
+  
