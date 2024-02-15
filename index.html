@@ -27,7 +27,22 @@
 					<div class="inner">
 						<h1>Cannabis Social Club Paderborn</h1>
 						<p>Willkommen beim Cannabis Social Club Paderborn. </br> Der erste CSC in Paderborn und Umgebung zum Cannabisanbau für den Eigenbedarf. </p>
-					
+					<div id="donate-button-container">
+<div id="donate-button"></div>
+<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+<script>
+PayPal.Donation.Button({
+env:'production',
+hosted_button_id:'BCE9E42EFAXNL',
+image: {
+src:'https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_LG.gif',
+alt:'Spenden mit dem PayPal-Button',
+title:'PayPal - The safer, easier way to pay online!',
+}
+}).render('#donate-button');
+</script>
+</div>
+
 					</div>
 				</div>
 				<nav>
