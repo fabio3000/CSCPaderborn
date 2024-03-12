@@ -1,0 +1,13 @@
+<div id="hcard-Jonas-Hellwig" class="vcard">
+  <address class="adr">
+     <div class="org">kulturbanause</div>
+     <div class="fn">Jonas Hellwig</div>
+     <div class="street-address">Reichenberger Str. 29</div>
+     <div class="postal-code">10999</div>
+     <div class="locality">Berlin</div>
+     <div class="country-name">Deutschland</div>
+  </address>
+  Fon: <span class="tel">+49 (0)30 - 555 709 666</span>
+  E-Mail: <a class="email" href="mailto:info@kulturbanause.de">info@kulturbanause.de</a>
+  Web: <a class="url" href="http://kulturbanause.de">kulturbanause.de</a>
+</div>
