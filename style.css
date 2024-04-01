@@ -208,6 +208,17 @@
   }
 
   .subscribtion.fivegram {
-    width: 300px; /* Ersetze 400px mit deinem gewünschten Wert */
+    width: 400px; /* Ersetze 400px mit deinem gewünschten Wert */
   }
-  
+  .subscribtion.tengram {
+    visibility: hidden;
+    display: none;
+  }
+  .subscribtion.twentyfivegram {
+    visibility: hidden;
+    display: none;
+  }
+  .subscribtion.fiftygram {
+    visibility: hidden;
+    display: none;
+  }
