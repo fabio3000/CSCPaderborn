@@ -116,7 +116,3 @@ subscriptionElements.forEach(element => {
     }
   });
 });
-
-
-
-
