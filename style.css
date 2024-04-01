@@ -58,7 +58,7 @@
   letter-spacing: 1px;
 }
 .form input {
-  width: 80%;
+  width: 100%;
   padding: 8px;
   border: none;
   background: none;
@@ -208,7 +208,7 @@
   }
 
   .subscribtion.fivegram {
-    width: 400px; /* Ersetze 400px mit deinem gewünschten Wert */
+    width: 300px; /* Ersetze 400px mit deinem gewünschten Wert */
   }
   .subscribtion.tengram {
     visibility: hidden;
