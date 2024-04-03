@@ -116,3 +116,16 @@ subscriptionElements.forEach(element => {
     }
   });
 });
+
+
+const birthdayInput = document.getElementById('birthday');
+
+birthdayInput.addEventListener('change', () => {
+  const today = new Date();
+  const birthDate = new Date(birthdayInput.value);
+  const age = Math.floor((today - birthDate) / (1000 * 60 * 60 * 24 * 365.25));
+
+  if (age < 21) {
+    alert('Du bist zu jung!');
+  }
+});
