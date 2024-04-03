@@ -3,7 +3,7 @@
 
 
 .subscribtion {
-  width: 80%;
+  width: 100%;
   overflow: hidden;
   padding: 12px;
   margin-bottom: 24px;
@@ -18,7 +18,7 @@
   margin-top: 24px;
 }
 .subscribtion h2 {
-  width: 60%;
+  width: 100%;
   font-weight: 700;
   font-size: 1.4em;
   letter-spacing: 2px;
@@ -168,7 +168,7 @@
 }
 
 .fivegram-button {
-  width: 80%;
+  width: 100%;
   margin-right: 0;
   margin-top: 8px;
   display: none;
@@ -208,7 +208,12 @@
   }
 
   .subscribtion.fivegram {
-    width: 300px; /* Ersetze 400px mit deinem gewünschten Wert */
+    width: 400px; 
+  }
+  @media (max-width: 768px) {
+    .subscribtion.fivegram {
+      width: 350px; /* Breite für Handys */
+    }
   }
   .subscribtion.tengram {
     visibility: hidden;
