@@ -7,8 +7,7 @@ body {
   }
   
   .particle-container {
-mask-image: url('https://png.pngtree.com/png-vector/20191018/ourmid/pngtree-cannabis-leaf-icon-simple-style-png-image_1823514.jpg');
-  mask-repeat: no-repeat;
+
     position: absolute;
     top: 0;
     left: 0;
